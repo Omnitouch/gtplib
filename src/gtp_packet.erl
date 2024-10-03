@@ -11,8 +11,8 @@
 -module(gtp_packet).
 
 -export([encode/1, encode_ies/1,
-         decode/1, decode/2, decode_ies/1, decode_ies/2,
-         msg_description/1, msg_description_v2/1,
+         decode/1, decode/2, decode_header/1, decode_ies/1, decode_ies/2,
+         msg_description/1, msg_description_v2/1, message_type_v1/1, message_type_v2/1,
          pretty_print/1, ies_to_otel_attrs/1]).
 -export([encode_plmn_id/1]).
 -export([decode_v2_user_location_information/2, decode_v1_rai/2]).
